@@ -1,0 +1,5 @@
+User-agent: 
+Crawl-delay: 5
+Host: https://modulo-offic.github.io/Modulo
+Disallow: /faqs.html
+Sitemap: https://modulo-offic.github.io/Modulo/sitemap.xml
