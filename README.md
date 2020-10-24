@@ -1,1 +1,1 @@
-Сайт Modulo - https://modulo-offic.github.io/Modulo/
+Сайт Modulo - https://modulo-offic.github.io/
