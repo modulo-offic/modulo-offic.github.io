@@ -988,6 +988,7 @@ input[type=text],input[type=email],input[type=password],input[type=submit],input
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+	box-shadow:0 0 0 1280px rgba(0, 0, 0, 0.658) inset;
 }
 
 .cards-section .title
