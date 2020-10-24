@@ -7,6 +7,7 @@ body
 	-moz-osx-font-smoothing:grayscale;
 }
 
+
 html,body
 {
 	height:100%;
@@ -930,7 +931,6 @@ input[type=text],input[type=email],input[type=password],input[type=submit],input
 {
 	background:#323232;
 	color:rgba(255,255,255,0.85);
-	padding:60px 0;
 }
 
 .landing-page .branding
@@ -980,6 +980,14 @@ input[type=text],input[type=email],input[type=password],input[type=submit],input
 {
 	background:#2B2B2B;
 	padding:60px 0;
+	background-image: url(backgroundimage.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
 .cards-section .title
