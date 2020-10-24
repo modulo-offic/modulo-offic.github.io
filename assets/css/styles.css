@@ -1273,6 +1273,18 @@ a:focus,.branding .logo a
 	margin-bottom:15px;
 }
 
+.social-icon {
+	margin: 10px;
+}
+
+@media (max-width: 360px) {
+	.social-icon {
+		width: 32px;
+		height: 32px;
+		margin: 5px;
+	}
+}
+
 @media (max-width: 767px) {
 	.doc-content
 	{
