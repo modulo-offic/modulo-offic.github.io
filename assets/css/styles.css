@@ -991,7 +991,7 @@ input[type=text],input[type=email],input[type=password],input[type=submit],input
 	box-shadow:0 0 0 1280px rgba(0, 0, 0, 0.658) inset;
 }
 
-@media (max-width: 430px) {
+@media (max-width: 480px) {
 	.cards-section{
 		background-attachment: scroll;
 	}
