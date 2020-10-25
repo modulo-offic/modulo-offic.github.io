@@ -983,7 +983,6 @@ input[type=text],input[type=email],input[type=password],input[type=submit],input
 	background-image: url(backgroundimage.jpg);
 	background-repeat: no-repeat;
 	background-position: center center;
-	background-attachment: fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -1340,3 +1339,4 @@ a:focus,.branding .logo a
 		max-width:200px;
 	}
 }
+  
