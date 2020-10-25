@@ -931,6 +931,8 @@ input[type=text],input[type=email],input[type=password],input[type=submit],input
 {
 	background:#323232;
 	color:rgba(255,255,255,0.85);
+	top: 0;
+	background: url(https://raw.githubusercontent.com/hudsonmarinho/header-and-footer-parallax-effect/master/assets/images/bg-header.jpg) no-repeat 50% 50%;
 }
 
 .landing-page .branding
@@ -1346,4 +1348,4 @@ a:focus,.branding .logo a
 		max-width:200px;
 	}
 }
-  
+
