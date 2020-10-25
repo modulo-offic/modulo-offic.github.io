@@ -38,6 +38,7 @@ p {
 a {
   color: #3aa7aa;
   -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
   -ms-transition: all 0.4s ease-in-out;
   -o-transition: all 0.4s ease-in-out;
@@ -62,6 +63,7 @@ code {
 .btn,
 a.btn {
   -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
   -ms-transition: all 0.4s ease-in-out;
   -o-transition: all 0.4s ease-in-out;
@@ -289,6 +291,7 @@ select {
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
   -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
   -ms-transition: all 0.4s ease-in-out;
   -o-transition: all 0.4s ease-in-out;
