@@ -1214,7 +1214,7 @@ a:focus,.branding .logo a
 
 .breadcrumb > li + li:before,.promo-block .highlight
 {
-	color:rgba(0,0,0,0.4);
+	color: rgba(255, 255, 255, 0.5);
 }
 
 .doc-header,.cards-section .item
@@ -1352,14 +1352,71 @@ a:focus,.branding .logo a
 }
 
 .body--night-mode {
-    background-color: #222;
+    background-color: rgb(0, 0, 0);
     color: #d9d9d9;
 }
 
 .body--night-mode .callout-info {
-    color: #ff0000;
+	background-color: rgb(55, 78, 90);
+    color: rgb(255, 255, 255);
 }
 
+.body--night-mode .callout-warning {
+    background-color: rgb(111, 85, 64);
+    color: rgb(255, 255, 255);
+}
+.body--night-mode .promo-block {
+    background-color: #333;
+}
+
+.body--night-mode .footer {
+    background-image: initial;
+    background-color: rgb(38, 38, 39);
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.body--night-mode .promo-block a, .promo-block .promo-title .fa {
+    color: rgba(246, 246, 245, 0.5);
+}
+
+.body--night-mode .breadcrumb > li + li::before, .promo-block .highlight {
+    color: rgba(246, 246, 245, 0.4);
+}
+
+.body--night-mode .doc-menu > li > a {
+    border-left-color: transparent;
+    color: rgb(199, 197, 195);
+}
+
+.btn-green, a.btn-green {
+	background: #75c181;
+	border: 1px solid #75c181;
+	color: #fff !important;
+}
+
+.body--night-mode .btn-green {
+    background: #3c4b3f;
+    border: 1px solid #3c4b3f;
+    color: #fff !important;
+}
+
+.body--night-mode .callout-success {
+    background-image: initial;
+    background-color: rgb(60, 75, 63);
+    color: rgb(255, 255, 255);
+}
+
+.body--night-mode .callout-block .callout-title {
+    color: rgba(246, 246, 245, 0.65);
+}
+
+.body--night-mode .doc-header .doc-title {
+	color: rgb(179, 198, 181);
+}
+
+.body--night-mode .footer a {
+	color: rgb(179, 198, 181);
+}
 
 .tumbler__wrapper {
 	margin: 0px 30px 0px auto;
