@@ -259,7 +259,14 @@ input[type=text],input[type=email],input[type=password],input[type=submit],input
 	border-top:5px solid #40babd;
 	padding:30px 0;
 	top: 0;
+	z-index: 2;
 	background: url(https://raw.githubusercontent.com/hudsonmarinho/header-and-footer-parallax-effect/master/assets/images/bg-header.jpg) no-repeat 50% 50%;
+	cursor: pointer;
+	transition: 3s linear;
+}
+
+.header:hover {
+	background: url(https://raw.githubusercontent.com/hudsonmarinho/header-and-footer-parallax-effect/master/assets/images/bg-header.jpg) no-repeat 50% 30%;
 }
 
 .branding
@@ -933,8 +940,16 @@ input[type=text],input[type=email],input[type=password],input[type=submit],input
 {
 	background:#323232;
 	color:rgba(255,255,255,0.85);
+	position: relative;
 	top: 0;
+	z-index: 2;
 	background: url(https://raw.githubusercontent.com/hudsonmarinho/header-and-footer-parallax-effect/master/assets/images/bg-header.jpg) no-repeat 50% 50%;
+	cursor: pointer;
+	transition: 3s linear;
+}
+
+.landing-page .header:hover {
+	background: url(https://raw.githubusercontent.com/hudsonmarinho/header-and-footer-parallax-effect/master/assets/images/bg-header.jpg) no-repeat 50% 30%;
 }
 
 .landing-page .branding
@@ -993,6 +1008,7 @@ input[type=text],input[type=email],input[type=password],input[type=submit],input
 	-o-background-size: cover;
 	background-size: cover;
 	box-shadow:0 0 0 1280px rgba(0, 0, 0, 0.658) inset;
+	transition: 3s linear;
 }
 
 @media (max-width: 480px) {
@@ -1356,6 +1372,11 @@ a:focus,.branding .logo a
     color: #d9d9d9;
 }
 
+.body--night-mode img{
+	-webkit-filter: brightness(40%);
+	filter: brightness(80%);
+}
+
 .body--night-mode .callout-info {
 	background-color: rgb(55, 78, 90);
     color: rgb(255, 255, 255);
@@ -1364,9 +1385,6 @@ a:focus,.branding .logo a
 .body--night-mode .callout-warning {
     background-color: rgb(111, 85, 64);
     color: rgb(255, 255, 255);
-}
-.body--night-mode .promo-block {
-    background-color: #333;
 }
 
 .body--night-mode .footer {
@@ -1415,7 +1433,61 @@ a:focus,.branding .logo a
 }
 
 .body--night-mode .footer a {
-	color: rgb(179, 198, 181);
+	color: #ddd;
+}
+
+.body--night-mode .answer {
+    color: rgb(199, 197, 195);
+}
+
+.body--night-mode .question {
+    color: rgb(175, 161, 180);
+}
+
+.body--night-mode .promo-block-2 {
+	background-image: initial;
+    background-color: rgb(62, 47, 67);
+}
+
+.body--night-mode .header {
+	border-color: rgb(62, 47, 67);
+	box-shadow: 0 0 0 1280px rgba(0, 0, 0, 0.829) inset;
+}
+
+.body--night-mode .promo-block-1 {
+	background-image: initial;
+    background-color: rgb(67, 83, 70);
+}
+
+.body--night-mode .body-green .header {
+    border-color: rgb(67, 83, 70);
+}
+
+.body--night-mode .cards-section .title {
+    color: #57497E;
+}
+
+.body--night-mode .btn-primary, a.btn-primary {
+    background-image: initial;
+    background-color: rgb(84, 107, 107);
+    border-top-color: rgb(91, 116, 116);
+    border-right-color: rgb(91, 116, 116);
+    border-bottom-color: rgb(91, 116, 116);
+    border-left-color: rgb(91, 116, 116);
+    color: rgb(255, 255, 255) !important;
+}
+
+.body--night-mode .cards-section .item-inner {
+	background-image: initial;
+    background-color: rgb(10, 10, 11);
+    border-top-color: rgb(43, 43, 43);
+    border-right-color: rgb(43, 43, 43);
+    border-bottom-color: rgb(43, 43, 43);
+    border-left-color: rgb(43, 43, 43);
+}
+
+.body--night-mode .cards-section {
+	box-shadow: 0 0 0 1280px rgba(0, 0, 0, 0.829) inset;
 }
 
 .tumbler__wrapper {
