@@ -277,17 +277,13 @@
     var theme = getCookie("theme");
     if (theme == "lite"){
         let date = Date.now();
-        console.log(date);
         date.setMonth(date.getMonth() + 12);
-        console.log(date);
         date = date.toUTCString();
         document.cookie = "theme=dark; path=/; expires="+date;
         console.log(document.cookie);
     }else{
         let date = Date.now();
-        console.log(date);
         date.setMonth(date.getMonth() + 12);
-        console.log(date);
         date = date.toUTCString();
         document.cookie = "theme=lite; path=/; expires="+date;
         console.log(document.cookie);
