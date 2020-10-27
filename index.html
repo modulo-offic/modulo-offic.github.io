@@ -262,21 +262,6 @@
     document.querySelector('.tumbler').classList.toggle('tumbler--night-mode');
     document.querySelectorAll('.post').forEach(post => {
         post.classList.toggle('post--night-mode');
-        if (theme == "lite"){
-            let date = Date.now();
-            console.log(date);
-            date.setMonth(date.getMonth() + 12);
-            console.log(date);
-            date = date.toUTCString();
-            document.cookie = "theme=dark; path=/; expires="+date;
-        }else{
-            let date = Date.now();
-            console.log(date);
-            date.setMonth(date.getMonth() + 12);
-            console.log(date);
-            date = date.toUTCString();
-            document.cookie = "theme=lite; path=/; expires="+date;
-        }
     });
     };
 
@@ -290,7 +275,23 @@
     };
     
     var theme = getCookie("theme");
-    console.log(theme);
+    if (theme == "lite"){
+        let date = Date.now();
+        console.log(date);
+        date.setMonth(date.getMonth() + 12);
+        console.log(date);
+        date = date.toUTCString();
+        document.cookie = "theme=dark; path=/; expires="+date;
+        console.log(document.cookie);
+    }else{
+        let date = Date.now();
+        console.log(date);
+        date.setMonth(date.getMonth() + 12);
+        console.log(date);
+        date = date.toUTCString();
+        document.cookie = "theme=lite; path=/; expires="+date;
+        console.log(document.cookie);
+    }
 
     switchTumblerHandler();
     </script>
