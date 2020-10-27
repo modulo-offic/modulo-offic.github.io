@@ -10,13 +10,13 @@ function getCookie(name) {
 var theme = getCookie("theme");
 if (theme == "lite"){
     let date = new Date(Date.now());
-    date.setMonth(date.getMonth() + 12);
+    date.setMonth(date.getMonth + 12);
     date = date.toUTCString();
     document.cookie = "theme=dark; path=/; expires="+date;
     console.log(document.cookie);
 }else{
     let date = new Date(Date.now());
-    date.setMonth(date.getMonth() + 12);
+    date.setMonth(date.getMonth + 12);
     date = date.toUTCString();
     document.cookie = "theme=lite; path=/; expires="+date;
     console.log(document.cookie);
