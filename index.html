@@ -251,25 +251,7 @@
     <script type="text/javascript" src="assets/plugins/jquery-match-height/jquery.matchHeight-min.js"></script>
     <script type="text/javascript" src="assets/js/main.js"></script>
     <!-- Скрипт кнопки смены темы -->
-    <script> 
-    const switchTumblerHandler = () => {
-    const wrapper = document.querySelector('.tumbler__wrapper');
-        wrapper.addEventListener('click', () => {
-        toggleNightMode();
-        });
-    };                    
-
-    const toggleNightMode = () => {
-    document.body.classList.toggle('body--night-mode');
-    document.querySelector('.tumbler').classList.toggle('tumbler--night-mode');
-    document.querySelectorAll('.post').forEach(post => {
-        post.classList.toggle('post--night-mode');
-    });
-    };
-
-
-    switchTumblerHandler();
-    </script>
+    <script src="assets/js/toogle.js"></script>
     <!-- Конец скрипта смены темы -->
 <<<<<<< HEAD
     <script>var wrapper = document.querySelector(".wrapper");
@@ -293,7 +275,6 @@ for (var i = 0; i < textCont.length; i++) {
   }(i));
 }</script>
 =======
-    <script src="assets/js/toogle.js"></script>
 >>>>>>> e0d792a393d73be745d3b3d4c3fca78063b0de90
 </body>
 </html> 
