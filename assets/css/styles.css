@@ -477,10 +477,6 @@ input[type=text],input[type=email],input[type=password],input[type=submit],input
 	color:rgba(0,0,0,0.25);
 }
 
-.item-inner:hover {
-	animation: 1.2s ease-in-out 0s normal none infinite running trambling-animation;
-}
-
 .callout-block .content
 {
 	margin-left:60px;

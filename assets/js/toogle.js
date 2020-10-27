@@ -35,8 +35,6 @@ const toggleNightMode = () => {
     };
     };
 
-
-
 // возвращает куки с указанным name,
 // или undefined, если ничего не найдено
 function getCookie(name) {
