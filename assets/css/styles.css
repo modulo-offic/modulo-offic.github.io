@@ -477,6 +477,10 @@ input[type=text],input[type=email],input[type=password],input[type=submit],input
 	color:rgba(0,0,0,0.25);
 }
 
+.item-inner:hover {
+	animation: 1.2s ease-in-out 0s normal none infinite running trambling-animation;
+}
+
 .callout-block .content
 {
 	margin-left:60px;
@@ -1032,6 +1036,12 @@ input[type=text],input[type=email],input[type=password],input[type=submit],input
 	margin:0 auto 60px;
 }
 
+@media (max-width: 320px) {
+	.cards-section .intro  {
+	font-size:10px;
+	}
+}
+
 .cards-section .cards-wrapper
 {
 	max-width:860px;
@@ -1312,6 +1322,22 @@ a:focus,.branding .logo a
 	margin: 10px;
 }
 
+.social-icon:hover {
+	animation: 1.2s ease-in-out 0s normal none infinite running trambling-animation;
+}
+
+@keyframes trambling-animation {
+    0%, 50%, 100% {
+        transform: rotate(0deg);
+    }
+    10%, 30% {
+        transform: rotate(-10deg);
+    }
+    20%, 40% {
+        transform: rotate(10deg);
+    }
+}
+
 @media (max-width: 360px) {
 	.social-icon {
 		width: 32px;
@@ -1535,3 +1561,20 @@ a:focus,.branding .logo a
 	color: #37789a;
 }
 
+.wave {
+	color: #999999;
+	-webkit-animation: 0.5s color infinite;
+			animation: 0.5s color infinite;
+  }
+  
+  @-webkit-keyframes color {
+	50% {
+	  color: #8fc8ae;
+	}
+  }
+  
+  @keyframes color {
+	50% {
+	  color: #8fc8ae;
+	}
+  }

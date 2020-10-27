@@ -189,7 +189,9 @@
                     </h1>
                 </div><!--//branding-->
                 <div class="tagline">
-                    <p> Мы сделаем вашу работу немного проще!</p>
+                    <div class="wrapper">
+                        <p class="text">Мы делаем вашу работу намного проще!</p>
+                    </div>
                 </div><!--//tagline-->
                 <div class="social-container">
                     <a href="https://vk.com/modulooffic"><img class="social-icon" src="assets/icons/vk.png" alt="иконка сети вк"></a>
@@ -212,7 +214,7 @@
                     <div class="item item-green col-md-4 col-sm-6 col-xs-6">
                         <div class="item-inner">
                             <div class="icon-holder">
-                                <img aria-hidden="true" src="MiniLib64.svg" alt="иконка программы" > 
+                                <img aria-hidden="true" class="animicon" src="MiniLib64.svg" alt="иконка программы" > 
                             </div><!--//icon-holder-->
                             <h3 class="title">Mini-lib</h3>
                             <p class="intro"> Удобная программа для работы с вашим библиотечным фондом </p>
@@ -222,7 +224,7 @@
                     <div class="item item-purple col-md-4 col-sm-6 col-xs-6">
                         <div class="item-inner">
                             <div class="icon-holder">
-                                <img aria-hidden="true" src="faq.png" alt="иконка поддержки">
+                                <img aria-hidden="true" class="animicon" src="faq.png" alt="иконка поддержки">
                             </div><!--//icon-holder-->
                             <h3 class="title">FAQs</h3>
                             <p class="intro">Отвечаем на ваши вопросы</p>
@@ -268,6 +270,26 @@
     switchTumblerHandler()
     </script> 
     <!-- Конец скрипта смены темы -->
+    <script>var wrapper = document.querySelector(".wrapper");
+var text = document.querySelector(".text");
+
+var textCont = text.textContent;
+text.style.display = "none";
+
+for (var i = 0; i < textCont.length; i++) {
+  (function(i) {
+    setTimeout(function() {
+      // Created textNode to append
+      var texts = document.createTextNode(textCont[i])
+      var span = document.createElement('span');
+      span.appendChild(texts);
+
+      span.classList.add("wave");
+      wrapper.appendChild(span);
+
+    }, 75 * i);
+  }(i));
+}</script>
 </body>
 </html> 
 
