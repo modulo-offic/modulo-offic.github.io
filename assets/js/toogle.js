@@ -14,10 +14,12 @@ const toggleNightMode = () => {
 };
 
 const toggleNightModeLoad = () => {
-document.body.classList.toggle('body--night-mode');
-document.querySelector('.tumbler').classList.toggle('tumbler--night-mode');
-document.querySelectorAll('.post').forEach(post => {
-    post.classList.toggle('post--night-mode');
+    document.body.classList.toggle('body--night-mode');
+    document.querySelector('.tumbler').classList.toggle('tumbler--night-mode');
+    document.querySelectorAll('.post').forEach(post => {
+        post.classList.toggle('post--night-mode');
+    
+    })
     let theme_click = getCookie("theme");
     if (theme_click == "lite"){
         let date = new Date(Date.now());
@@ -30,9 +32,9 @@ document.querySelectorAll('.post').forEach(post => {
         date.setMonth(date.getMonth + 12);
         date = date.toUTCString();
         document.cookie = "theme=lite; path=/; expires="+date;
-}
-});
-};
+    }
+    };
+
 
 
 // возвращает куки с указанным name,
