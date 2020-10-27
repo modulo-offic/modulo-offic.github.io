@@ -19,9 +19,8 @@ const toggleNightMode = () => {
     document.querySelectorAll('.post').forEach(post => {
         post.classList.toggle('post--night-mode');
     
-    })
+    });
     let theme_click = getCookie("theme");
-    console.log(theme_click);
     if (theme_click == "lite"){
         let date = new Date(Date.now());
         date.setMonth(date.getMonth + 12);
@@ -33,7 +32,7 @@ const toggleNightMode = () => {
         date.setMonth(date.getMonth + 12);
         date = date.toUTCString();
         document.cookie = "theme=lite; path=/; expires="+date;
-    }
+    };
     };
 
 
@@ -51,6 +50,7 @@ function getCookie(name) {
 var theme = getCookie("theme");
 if (theme == "dark"){
     toggleNightModeLoad();
+    console.log(theme);
 }
 
 
