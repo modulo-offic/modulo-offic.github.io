@@ -1562,19 +1562,19 @@ a:focus,.branding .logo a
 }
 
 .wave {
-	color: #999999;
-	-webkit-animation: 0.5s color infinite;
-			animation: 0.5s color infinite;
+	color: #6e40ee;
+	-webkit-animation: 2s color infinite;
+			animation: 2s color infinite;
   }
   
   @-webkit-keyframes color {
 	50% {
-	  color: #8fc8ae;
+	  color: #ccc;;
 	}
   }
   
   @keyframes color {
 	50% {
-	  color: #8fc8ae;
+	  color: #ccc;;
 	}
   }
