@@ -3,9 +3,17 @@ const wrapper = document.querySelector('.tumbler__wrapper');
     wrapper.addEventListener('click', () => {
     toggleNightMode();
     });
-};                    
+}; 
 
 const toggleNightMode = () => {
+    document.body.classList.toggle('body--night-mode');
+    document.querySelector('.tumbler').classList.toggle('tumbler--night-mode');
+    document.querySelectorAll('.post').forEach(post => {
+        post.classList.toggle('post--night-mode');
+    });
+};
+
+const toggleNightModeLoad = () => {
 document.body.classList.toggle('body--night-mode');
 document.querySelector('.tumbler').classList.toggle('tumbler--night-mode');
 document.querySelectorAll('.post').forEach(post => {
@@ -16,14 +24,12 @@ document.querySelectorAll('.post').forEach(post => {
         date.setMonth(date.getMonth + 12);
         date = date.toUTCString();
         document.cookie = "theme=dark; path=/; expires="+date;
-        console.log(document.cookie);
     
     }else{
         let date = new Date(Date.now());
         date.setMonth(date.getMonth + 12);
         date = date.toUTCString();
         document.cookie = "theme=lite; path=/; expires="+date;
-        console.log(document.cookie);
 }
 });
 };
@@ -41,7 +47,7 @@ function getCookie(name) {
 
 var theme = getCookie("theme");
 if (theme == "dark"){
-    toggleNightMode();
+    toggleNightModeLoad();
 }
 
 
