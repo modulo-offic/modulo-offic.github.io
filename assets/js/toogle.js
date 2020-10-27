@@ -1,5 +1,5 @@
 // возвращает куки с указанным name,
-    // или undefined, если ничего не найдено
+// или undefined, если ничего не найдено
 function getCookie(name) {
     let matches = document.cookie.match(new RegExp(
         "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
@@ -9,13 +9,13 @@ function getCookie(name) {
     
 var theme = getCookie("theme");
 if (theme == "lite"){
-    let date = Date.now();
+    let date = new Date(Date.now());
     date.setMonth(date.getMonth() + 12);
     date = date.toUTCString();
     document.cookie = "theme=dark; path=/; expires="+date;
     console.log(document.cookie);
 }else{
-    let date = Date.now();
+    let date = new Date(Date.now());
     date.setMonth(date.getMonth() + 12);
     date = date.toUTCString();
     document.cookie = "theme=lite; path=/; expires="+date;
