@@ -50,7 +50,6 @@ function getCookie(name) {
 var theme = getCookie("theme");
 if (theme == "dark"){
     toggleNightModeLoad();
-    console.log(theme);
 }
 
 
