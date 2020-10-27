@@ -262,12 +262,6 @@
     document.querySelector('.tumbler').classList.toggle('tumbler--night-mode');
     document.querySelectorAll('.post').forEach(post => {
         post.classList.toggle('post--night-mode');
-        let date = Date.now();
-        console.log(date);
-        date.setMonth(date.getMonth() + 12);
-        console.log(date);
-        date = date.toUTCString();
-        document.cookie = "theme=dark; path=/; expires="+date;
     });
     };
 
