@@ -251,23 +251,40 @@
     <!-- Скрипт кнопки смены темы -->
     <script> 
     const switchTumblerHandler = () => {
-    const wrapper = document.querySelector('.tumbler__wrapper')
+    const wrapper = document.querySelector('.tumbler__wrapper');
         wrapper.addEventListener('click', () => {
-        toggleNightMode()
-        })
-    }                          
+        toggleNightMode();
+        });
+    };                    
 
     const toggleNightMode = () => {
-    document.body.classList.toggle('body--night-mode')
-    document.querySelector('.tumbler').classList.toggle('tumbler--night-mode')
+    document.body.classList.toggle('body--night-mode');
+    document.querySelector('.tumbler').classList.toggle('tumbler--night-mode');
     document.querySelectorAll('.post').forEach(post => {
-        post.classList.toggle('post--night-mode')
-    })
-    }
+        post.classList.toggle('post--night-mode');
+        let date = Date.now();
+        console.log(date);
+        date.setMonth(date.getMonth() + 12);
+        console.log(date);
+        date = date.toUTCString();
+        document.cookie = "theme=dark; path=/; expires="+date;
+    });
+    };
 
-    switchTumblerHandler()
-    </script> 
-    <script src="assets/js/toogle.js"></script>
+    // возвращает куки с указанным name,
+    // или undefined, если ничего не найдено
+    function getCookie(name) {
+        let matches = document.cookie.match(new RegExp(
+            "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
+        ));
+        return matches ? decodeURIComponent(matches[1]) : undefined;
+    };
+    
+    let theme = getCookie("theme");
+    console.log(theme);
+
+    switchTumblerHandler();
+    </script>
     <!-- Конец скрипта смены темы -->
 </body>
 </html> 
