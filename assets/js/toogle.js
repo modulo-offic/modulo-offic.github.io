@@ -21,6 +21,7 @@ const toggleNightMode = () => {
     
     })
     let theme_click = getCookie("theme");
+    console.log(theme_click);
     if (theme_click == "lite"){
         let date = new Date(Date.now());
         date.setMonth(date.getMonth + 12);
