@@ -1034,7 +1034,7 @@ input[type=text],input[type=email],input[type=password],input[type=submit],input
 
 @media (max-width: 320px) {
 	.cards-section .intro  {
-	font-size:10px;
+	font-size:12px;
 	}
 }
 
