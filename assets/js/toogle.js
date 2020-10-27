@@ -5,7 +5,7 @@ const wrapper = document.querySelector('.tumbler__wrapper');
     });
 }; 
 
-const toggleNightMode = () => {
+const toggleNightModeLoad = () => {
     document.body.classList.toggle('body--night-mode');
     document.querySelector('.tumbler').classList.toggle('tumbler--night-mode');
     document.querySelectorAll('.post').forEach(post => {
@@ -13,7 +13,7 @@ const toggleNightMode = () => {
     });
 };
 
-const toggleNightModeLoad = () => {
+const toggleNightMode = () => {
     document.body.classList.toggle('body--night-mode');
     document.querySelector('.tumbler').classList.toggle('tumbler--night-mode');
     document.querySelectorAll('.post').forEach(post => {
