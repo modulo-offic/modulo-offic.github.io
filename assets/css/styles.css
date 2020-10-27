@@ -260,13 +260,13 @@ input[type=text],input[type=email],input[type=password],input[type=submit],input
 	padding:30px 0;
 	top: 0;
 	z-index: 2;
-	background: url(https://raw.githubusercontent.com/hudsonmarinho/header-and-footer-parallax-effect/master/assets/images/bg-header.jpg) no-repeat 50% 50%;
+	background: url(assets/images/bg-header.jpg) no-repeat 50% 50%;
 	cursor: pointer;
 	transition: 3s linear;
 }
 
 .header:hover {
-	background: url(https://raw.githubusercontent.com/hudsonmarinho/header-and-footer-parallax-effect/master/assets/images/bg-header.jpg) no-repeat 50% 30%;
+	background: url(assets/images/bg-header.jpg) no-repeat 50% 30%;
 }
 
 .branding
