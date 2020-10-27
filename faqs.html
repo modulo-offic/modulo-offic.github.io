@@ -326,24 +326,7 @@
     <script type="text/javascript" src="assets/plugins/jquery-match-height/jquery.matchHeight-min.js"></script>
     <script type="text/javascript" src="assets/js/main.js"></script>
     <!-- Скрипт кнопки смены темы -->
-    <script> 
-    const switchTumblerHandler = () => {
-    const wrapper = document.querySelector('.tumbler__wrapper')
-        wrapper.addEventListener('click', () => {
-        toggleNightMode()
-        })
-    }                          
-
-    const toggleNightMode = () => {
-    document.body.classList.toggle('body--night-mode')
-    document.querySelector('.tumbler').classList.toggle('tumbler--night-mode')
-    document.querySelectorAll('.post').forEach(post => {
-        post.classList.toggle('post--night-mode')
-    })
-    }
-
-    switchTumblerHandler()
-    </script> 
+    <script src="assets/js/toogle.js"></script>
     <!-- Конец скрипта смены темы -->
 </body>
 </html> 
