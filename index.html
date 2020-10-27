@@ -253,23 +253,25 @@
     <!-- Скрипт кнопки смены темы -->
     <script> 
     const switchTumblerHandler = () => {
-    const wrapper = document.querySelector('.tumbler__wrapper')
+    const wrapper = document.querySelector('.tumbler__wrapper');
         wrapper.addEventListener('click', () => {
-        toggleNightMode()
-        })
-    }                          
+        toggleNightMode();
+        });
+    };                    
 
     const toggleNightMode = () => {
-    document.body.classList.toggle('body--night-mode')
-    document.querySelector('.tumbler').classList.toggle('tumbler--night-mode')
+    document.body.classList.toggle('body--night-mode');
+    document.querySelector('.tumbler').classList.toggle('tumbler--night-mode');
     document.querySelectorAll('.post').forEach(post => {
-        post.classList.toggle('post--night-mode')
-    })
-    }
+        post.classList.toggle('post--night-mode');
+    });
+    };
 
-    switchTumblerHandler()
-    </script> 
+
+    switchTumblerHandler();
+    </script>
     <!-- Конец скрипта смены темы -->
+<<<<<<< HEAD
     <script>var wrapper = document.querySelector(".wrapper");
 var text = document.querySelector(".text");
 
@@ -290,6 +292,9 @@ for (var i = 0; i < textCont.length; i++) {
     }, 75 * i);
   }(i));
 }</script>
+=======
+    <script src="assets/js/toogle.js"></script>
+>>>>>>> e0d792a393d73be745d3b3d4c3fca78063b0de90
 </body>
 </html> 
 
