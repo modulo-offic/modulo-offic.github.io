@@ -62,3 +62,4 @@ if (theme == "dark"){
 
 
 switchTumblerHandler();
+console.log(getCookie("theme"));
