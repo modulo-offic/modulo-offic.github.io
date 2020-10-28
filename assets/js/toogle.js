@@ -30,15 +30,15 @@ const toggleNightMode = () => {
 function check(){
     let theme_click = getCookie("theme");
     if (theme_click == "dark"){
-        let date = new Date(Date.now());
-        date.setFullYear(date.getFullYear + 12);
-        date = date.toUTCString();
+        let date = new Date();
+        date.setFullYear(date.getFullYear() + 12);
+        date = date.toGMTString();
         document.cookie = "theme=lite; path=/; expires="+date;
     
     }else{
-        let date = new Date(Date.now());
-        date.setFullYear(date.getFullYear + 12);
-        date = date.toUTCString();
+        let date = new Date();
+        date.setFullYear(date.getFullYear() + 12);
+        date = date.toGMTString();
         document.cookie = "theme=dark; path=/; expires="+date;
     };
 };
