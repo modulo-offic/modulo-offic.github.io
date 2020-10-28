@@ -1,9 +1,14 @@
 const switchTumblerHandler = () => {
-const wrapper = document.querySelector('.tumbler__wrapper');
-    wrapper.addEventListener('click', () => {
-    toggleNightMode();
-    });
+    const wrapper = document.querySelector('.tumbler__wrapper');
+        wrapper.addEventListener('click', () => {
+        click_tumbler()
+        });
 }; 
+
+async function click_tumbler(){
+    check();
+    await toggleNightMode();
+};
 
 const toggleNightModeLoad = () => {
     document.body.classList.toggle('body--night-mode');
@@ -20,20 +25,23 @@ const toggleNightMode = () => {
         post.classList.toggle('post--night-mode');
     
     });
+};
+
+function check(){
     let theme_click = getCookie("theme");
-    if (theme_click == "lite"){
+    if (theme_click == "dark"){
         let date = new Date(Date.now());
         date.setFullYear(date.getFullYear + 12);
         date = date.toUTCString();
-        document.cookie = "theme=dark; path=/; expires="+date;
+        document.cookie = "theme=lite; path=/; expires="+date;
     
     }else{
         let date = new Date(Date.now());
         date.setFullYear(date.getFullYear + 12);
         date = date.toUTCString();
-        document.cookie = "theme=lite; path=/; expires="+date;
+        document.cookie = "theme=dark; path=/; expires="+date;
     };
-    };
+};
 
 
 
