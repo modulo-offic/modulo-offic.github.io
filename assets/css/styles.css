@@ -5,7 +5,7 @@ body
 	font-size:16px;
 	-webkit-font-smoothing:antialiased;
 	-moz-osx-font-smoothing:grayscale;
-	transition: 1s background, color;
+	transition: background,background-color 450ms ease-in-out,opacity 120ms linear;
 }
 
 
@@ -262,11 +262,12 @@ input[type=text],input[type=email],input[type=password],input[type=submit],input
 	z-index: 2;
 	background: url(https://raw.githubusercontent.com/hudsonmarinho/header-and-footer-parallax-effect/master/assets/images/bg-header.jpg) no-repeat 50% 50%;
 	cursor: pointer;
-	transition: 3s linear;
+	transition-duration: 1s;
 }
 
 .header:hover {
-	background: url(https://raw.githubusercontent.com/hudsonmarinho/header-and-footer-parallax-effect/master/assets/images/bg-header.jpg) no-repeat 50% 30%;
+	background: url(https://raw.githubusercontent.com/hudsonmarinho/header-and-footer-parallax-effect/master/assets/images/bg-header.jpg) no-repeat 51% 49%;
+	transition-duration: 1s;
 }
 
 .branding
@@ -944,11 +945,11 @@ input[type=text],input[type=email],input[type=password],input[type=submit],input
 	z-index: 2;
 	background: url(https://raw.githubusercontent.com/hudsonmarinho/header-and-footer-parallax-effect/master/assets/images/bg-header.jpg) no-repeat 50% 50%;
 	cursor: pointer;
-	transition: 3s linear;
+	transition-duration: 1s; 
 }
 
 .landing-page .header:hover {
-	background: url(https://raw.githubusercontent.com/hudsonmarinho/header-and-footer-parallax-effect/master/assets/images/bg-header.jpg) no-repeat 50% 30%;
+	background: url(https://raw.githubusercontent.com/hudsonmarinho/header-and-footer-parallax-effect/master/assets/images/bg-header.jpg) no-repeat 49% 51%;
 }
 
 .landing-page .branding
@@ -1002,12 +1003,12 @@ input[type=text],input[type=email],input[type=password],input[type=submit],input
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-attachment: fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
+	-webkit-background-size: auto;
+	-moz-background-size: auto;
+	-o-background-size: auto;
 	background-size: cover;
 	box-shadow:0 0 0 1280px rgba(0, 0, 0, 0.658) inset;
-	transition: 3s linear;
+	transition: background-color 450ms ease-in-out,opacity 120ms linear;
 }
 
 @media (max-width: 480px) {
@@ -1391,148 +1392,148 @@ a:focus,.branding .logo a
 .body--night-mode {
     background-color: #222;
 	color: #d9d9d9;
-	animation-duration: 0s;
+	
 }
 
 .body--night-mode img{
 	-webkit-filter: brightness(40%);
 	filter: brightness(80%);
-	animation-duration: 0s;
+	
 }
 
 .body--night-mode .callout-info {
 	background-color: rgb(55, 78, 90);
 	color: rgb(255, 255, 255);
-	animation-duration: 0s;
+	
 }
 
 .body--night-mode .callout-warning {
     background-color: rgb(111, 85, 64);
 	color: rgb(255, 255, 255);
-	animation-duration: 0s;
+	
 }
 
 .body--night-mode .footer {
-    background-image: initial;
+    
     background-color: rgb(38, 38, 39);
 	color: rgba(255, 255, 255, 0.6);
-	animation-duration: 0s;
+	
 }
 
 .body--night-mode .promo-block a, .promo-block .promo-title .fa {
 	color: rgba(246, 246, 245, 0.5);
-	animation-duration: 0s;
+	
 }
 
 .body--night-mode .breadcrumb > li + li::before, .promo-block .highlight {
 	color: rgba(246, 246, 245, 0.4);
-	animation-duration: 0s;
+	
 }
 
 .body--night-mode .doc-menu > li > a {
     border-left-color: transparent;
 	color: rgb(199, 197, 195);
-	animation-duration: 0s;
+	
 }
 
 .btn-green, a.btn-green {
 	background: #75c181;
 	border: 1px solid #75c181;
 	color: #fff !important;
-	animation-duration: 0s;
+	
 }
 
 .body--night-mode .btn-green {
     background: #3c4b3f;
     border: 1px solid #3c4b3f;
 	color: #fff !important;
-	animation-duration: 0s;
+	
 }
 
 .body--night-mode .callout-success {
-    background-image: initial;
+    
     background-color: rgb(60, 75, 63);
 	color: rgb(255, 255, 255);
-	animation-duration: 0s;
+	
 }
 
 .body--night-mode .callout-block .callout-title {
 	color: rgba(246, 246, 245, 0.65);
-	animation-duration: 0s;
+	
 }
 
 .body--night-mode .doc-header .doc-title {
 	color: rgb(179, 198, 181);
-	animation-duration: 0s;
+	
 }
 
 .body--night-mode .footer a {
 	color: #ddd;
-	animation-duration: 0s;
+	
 }
 
 .body--night-mode .answer {
 	color: rgb(199, 197, 195);
-	animation-duration: 0s;
+	
 }
 
 .body--night-mode .question {
 	color: rgb(175, 161, 180);
-	animation-duration: 0s;
+	
 }
 
 .body--night-mode .promo-block-2 {
-	background-image: initial;
+	
 	background-color: rgb(62, 47, 67);
-	animation-duration: 0s;
+	
 }
 
 .body--night-mode .header {
 	border-color: rgb(62, 47, 67);
 	box-shadow: 0 0 0 1280px rgba(0, 0, 0, 0.829) inset;
-	animation-duration: 0s;
+	transition: background-color 450ms ease-in-out,opacity 120ms linear;
 }
 
 .body--night-mode .promo-block-1 {
-	background-image: initial;
+	
 	background-color: rgb(67, 83, 70);
-	animation-duration: 0s;
+	
 }
 
 .body--night-mode .body-green .header {
 	border-color: rgb(67, 83, 70);
-	animation-duration: 0s;
+	
 }
 
 .body--night-mode .cards-section .title {
 	color: #57497E;
-	animation-duration: 0s;
+	
 }
 
 .body--night-mode .btn-primary, a.btn-primary {
-    background-image: initial;
+    
     background-color: rgb(84, 107, 107);
     border-top-color: rgb(91, 116, 116);
     border-right-color: rgb(91, 116, 116);
     border-bottom-color: rgb(91, 116, 116);
     border-left-color: rgb(91, 116, 116);
 	color: rgb(255, 255, 255) !important;
-	animation-duration: 0s;
+	
 }
 
 .body--night-mode .cards-section .item-inner {
-	background-image: initial;
+	
     background-color: rgb(10, 10, 11);
     border-top-color: rgb(43, 43, 43);
     border-right-color: rgb(43, 43, 43);
     border-bottom-color: rgb(43, 43, 43);
 	border-left-color: rgb(43, 43, 43);
-	animation-duration: 0s;
+	
 }
 
 .body--night-mode .cards-section {
 	box-shadow: 0 0 0 1280px rgba(0, 0, 0, 0.829) inset;
-	animation-duration: 0s;
+	
 }
 
 .tumbler__wrapper {
@@ -1578,7 +1579,7 @@ a:focus,.branding .logo a
 .post--night-mode {
 	border-bottom: 1px dashed #d9d9d9;
 	color: #37789a;
-	animation-duration: 0s;
+	
 }
 
 .wave {
