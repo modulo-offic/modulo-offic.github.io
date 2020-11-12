@@ -21,16 +21,12 @@
 	*zoom: 1;
 }
 
-
-
 .bx-wrapper .bx-pager,
 .bx-wrapper .bx-controls-auto {
 	position: absolute;
 	bottom: -30px;
 	width: 100%;
 }
-
-
 
 /* PAGER */
 
