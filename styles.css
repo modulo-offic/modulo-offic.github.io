@@ -30,6 +30,15 @@ body {
   display: block;
   height: 50px;
 }
+
+@media (max-width: 768px){
+  .bx-wrapper {
+      background: none !important;
+      box-shadow: none !important;
+      border: none !important;
+  }
+}
+
 .footer {
   height: 50px;
 }
