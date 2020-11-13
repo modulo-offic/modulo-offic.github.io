@@ -1,5 +1,7 @@
 $(document).ready(function(){
     $('#gall').bxSlider({
-        adaptiveHeight: true,
+        controls: false,
+        auto: true,
+        pause: 4500
     });
   });
