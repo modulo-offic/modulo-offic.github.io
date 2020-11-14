@@ -10,7 +10,6 @@
  * http://bxcreative.com
  */
 
-
 /** RESET AND LAYOUT
 ===================================*/
 
@@ -20,14 +19,12 @@
 	padding: 0;
 	*zoom: 1;
 }
-
 .bx-wrapper .bx-pager,
 .bx-wrapper .bx-controls-auto {
 	position: absolute;
 	bottom: -30px;
 	width: 100%;
 }
-
 /* PAGER */
 
 .bx-wrapper .bx-pager {
@@ -38,14 +35,12 @@
 	color: #666;
 	padding-top: 20px;
 }
-
 .bx-wrapper .bx-pager .bx-pager-item,
 .bx-wrapper .bx-controls-auto .bx-controls-auto-item {
 	display: inline-block;
 	*zoom: 1;
 	*display: inline;
 }
-
 .bx-wrapper .bx-pager.bx-default-pager a {
 	background: #666;
 	text-indent: -9999px;
@@ -58,24 +53,20 @@
 	-webkit-border-radius: 5px;
 	border-radius: 5px;
 }
-
 .bx-wrapper .bx-pager.bx-default-pager a:hover,
 .bx-wrapper .bx-pager.bx-default-pager a.active {
 	background: #000;
 }
-
 /* DIRECTION CONTROLS (NEXT / PREV) */
 
 .bx-wrapper .bx-prev {
 	left: -70px;
 	background: url(../images/left.png) no-repeat;
 }
-
 .bx-wrapper .bx-next {
 	right: -70px;
 	background: url(../images/right.png) no-repeat;
 }
-
 .bx-wrapper .bx-controls-direction a {
 	position: absolute;
 	top: 67%;
@@ -86,17 +77,14 @@
 	text-indent: -9999px;
 	z-index: 9998;
 }
-
 .bx-wrapper .bx-controls-direction a.disabled {
 	display: none;
 }
-
 /* AUTO CONTROLS (START / STOP) */
 
 .bx-wrapper .bx-controls-auto {
 	text-align: center;
 }
-
 .bx-wrapper .bx-controls-auto .bx-start {
 	display: block;
 	text-indent: -9999px;
@@ -106,12 +94,10 @@
 	background: url(images/controls.png) -86px -11px no-repeat;
 	margin: 0 3px;
 }
-
 .bx-wrapper .bx-controls-auto .bx-start:hover,
 .bx-wrapper .bx-controls-auto .bx-start.active {
 	background-position: -86px 0;
 }
-
 .bx-wrapper .bx-controls-auto .bx-stop {
 	display: block;
 	text-indent: -9999px;
@@ -121,22 +107,20 @@
 	background: url(images/controls.png) -86px -44px no-repeat;
 	margin: 0 3px;
 }
-
 .bx-wrapper .bx-controls-auto .bx-stop:hover,
 .bx-wrapper .bx-controls-auto .bx-stop.active {
 	background-position: -86px -33px;
 }
-
 /* PAGER WITH AUTO-CONTROLS HYBRID LAYOUT */
 
 .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
 	text-align: left;
 	width: 80%;
 }
-
 .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {
 	right: 0;
 	width: 35px;
 }
-
-.banner .bx-pager{display:none;}
+.banner .bx-pager {
+	display: none;
+}
