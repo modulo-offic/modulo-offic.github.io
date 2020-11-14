@@ -1291,6 +1291,10 @@ a:focus, .branding .logo a {
   box-shadow: 0 0 0 1280px rgba(0,0,0,.829) inset;
 }
 
+.body--night-mode .doc-wrapper {
+  background: #202020;
+}
+
 .tumbler__wrapper {
   margin: 0 30px 0 auto;
   width: 50px;
