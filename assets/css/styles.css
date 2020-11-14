@@ -1345,3 +1345,11 @@ a.btn-primary {
 h3.blocktext {
 	text-align: center;
 }
+img {
+	opacity: 1;
+	transition: opacity 0.3s;
+  }
+  
+  img[data-src] {
+	opacity: 0;
+  }
