@@ -89,8 +89,8 @@ article {
 .btn-primary {
   border-radius: 40px;
   width: 150px;
-  background-color: #6600ff;
-  border-color: #6600ff5e;
+  background-color: #6600ff50;
+  border-color: rgba(102, 0, 255, 0.212);
 }
 
 .bg-primary {
