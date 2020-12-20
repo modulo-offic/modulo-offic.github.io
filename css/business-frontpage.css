@@ -93,9 +93,14 @@ article {
   border-color: #6600ff5e;
 }
 
+.bg-primary {
+  background-color: #ffffff!important;
+}
+
 @media (max-width:340px) {
   .btn-left {
     margin-bottom: 10px;
+    margin-left: 5px;
     position: relative;
     left: 50%;
     transform: translate(-50%, 0);
@@ -144,18 +149,18 @@ article {
 .btn-right2 {
   background-color: rgba(255, 255, 255, 0);
   margin-left: 5px;
-  border-color:  #625575;
+  border-color: #557567;
 }
 
 .btn-right2:hover {
-  background-color: #62557571;
-  border-color:  #625575;
+  background-color: #5575678a;
+  border-color:  #557567;
 }
 
 .btn-left2 {
-  background-color: #625575;
+  background-color: #557567;
   margin-left: 5px;
-  border-color:  #625575;
+  border-color:  rgba(98, 85, 117, 0.774);
 }
 
 .btn-right-download {
@@ -168,9 +173,9 @@ article {
 }
 
 .btn-left2:hover {
-  background-color: #625575e7;
+  background-color: #557567d0;
   margin-left: 5px;
-  border-color:  #625575;
+  border-color:  #557567a4;
 }
 
 .bg-dark1 {
