@@ -1,5 +1,4 @@
 User-agent: 
 Crawl-delay: 5
 Host: https://modulo-offic.site/
-Disallow: https://modulo-offic.site/404.html
-Sitemap: http://https://modulo-offic.site/sitemap.xml
+Sitemap: http://modulo-offic.site/sitemap.xml
