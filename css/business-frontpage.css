@@ -18,9 +18,121 @@ article {
   column-width: 500px;  
 }  
 
+.bg-primary {
+  background-color: #ffffff!important;
+}
+
+/* стили для кнопок */
+
+.btn-primary {
+  border-radius: 40px;
+  width: 150px;
+  background-color: #6600ff;
+  border-color: rgba(102, 0, 255, 0.63);
+}
+
+.btn-primary:hover {
+  background-color: #6600ffc2;
+  border-color:  #6600ffc2;
+}
+
+.btn-left {
+  background-color: #6600ff;
+  border-color: rgba(102, 0, 255, 0.753);
+}
+
+.btn-left:hover {
+  background-color: #6600ffbe;
+  border-color:  #6600ffc2;
+}
+
+@media (max-width:340px) {
+  .btn-left {
+    margin-bottom: 10px;
+    margin-left: 5px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+}
+
+.btn-left2 {
+  background-color: #557567;
+  border-color:  #557567e8;
+}
+
+.btn-left2:hover {
+  background-color: #557567d0;
+  border-color:  #557567e8;
+}
+
+@media (max-width:340px) {
+  .btn-left2 {
+    margin-bottom: 10px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+}
+
+.btn-right {
+  background-color: rgba(255, 255, 255, 0);
+  margin-left: 5px;
+}
+
+.btn-right:hover {
+  background-color: rgba(179, 0, 255, 0.164);
+}
+
+@media (max-width:340px) {
+  .btn-right {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+}
+
+.btn-right2 {
+  background-color: rgba(255, 255, 255, 0);
+  border-color: #557567;
+}
+
+.btn-right2:hover {
+  background-color: #5575678a;
+  border-color:  #557567;
+}
+
+@media (max-width:340px) {
+  .btn-right2 {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+}
+
+.btn-right-download {
+  background-color: #625575;
+  margin-left: 5px;
+  border-color:  #625575;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.btn-right-download:hover {
+  background-color: #625575d7;
+  margin-left: 5px;
+  border-color:  #625575a2;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
 .social-btns {
   margin-top: 5px;
 }
+
+/* /стили для кнопок */
 
 .emoji {
   position:relative; 
@@ -88,98 +200,6 @@ article {
   font-size: 3.5rem;
   font-weight: 500;
   line-height: 1.2;
-}
-
-.btn-primary {
-  border-radius: 40px;
-  width: 150px;
-  background-color: #6600ff;
-  border-color: rgba(102, 0, 255, 0.63);
-}
-
-.bg-primary {
-  background-color: #ffffff!important;
-}
-
-@media (max-width:340px) {
-  .btn-left {
-    margin-bottom: 10px;
-    margin-left: 5px;
-    position: relative;
-    left: 50%;
-    transform: translate(-50%, 0);
-  }
-}
-
-@media (max-width:340px) {
-  .btn-right {
-    position: relative;
-    left: 50%;
-    transform: translate(-50%, 0);
-  }
-}
-
-@media (max-width:340px) {
-  .btn-left2 {
-    margin-bottom: 10px;
-    position: relative;
-    left: 50%;
-    transform: translate(-50%, 0);
-  }
-}
-
-@media (max-width:340px) {
-  .btn-right2 {
-    position: relative;
-    left: 50%;
-    transform: translate(-50%, 0);
-  }
-}
-
-.btn-primary:hover {
-  background-color: #6600ffc2;
-  border-color:  #6600ffc2;
-}
-
-.btn-right {
-  background-color: rgba(255, 255, 255, 0);
-  margin-left: 5px;
-}
-
-.btn-right:hover {
-  background-color: rgba(179, 0, 255, 0.164);
-}
-
-.btn-right2 {
-  background-color: rgba(255, 255, 255, 0);
-  margin-left: 5px;
-  border-color: #557567;
-}
-
-.btn-right2:hover {
-  background-color: #5575678a;
-  border-color:  #557567;
-}
-
-.btn-left2 {
-  background-color: #557567;
-  margin-left: 5px;
-  border-color:  rgba(98, 85, 117, 0.774);
-}
-
-.btn-right-download {
-  background-color: #625575;
-  margin-left: 5px;
-  border-color:  #625575;
-  position: relative;
-  left: 50%;
-  transform: translate(-50%, 0);
-}
-
-.btn-left2:hover {
-  background-color: #557567d0;
-  margin-left: 5px;
-  border-color:  #557567a4;
 }
 
 .bg-dark1 {
