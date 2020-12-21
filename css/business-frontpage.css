@@ -8,6 +8,10 @@ body {
   background: repeating-linear-gradient(45deg, #ffffff 0%, #ffffff 10%, #ffffff 0%, #efefff81 30%) 0 / 15px 15px;
 }
 
+.disable-hover {
+  pointer-events: none;
+}
+
 article {  
   -moz-column-width: 150px;  
   -webkit-column-width: 150px;   
@@ -199,7 +203,6 @@ header {
   background-image: url(bg-image.jpg);
   background-repeat: no-repeat;
   background-position: center center;
-  background-attachment: fixed;
   -webkit-background-size: auto;
   -moz-background-size: auto;
   -o-background-size: auto;
@@ -214,7 +217,6 @@ header {
   background-image: url(minilib-page2.jpg);
   background-repeat: no-repeat;
   background-position: center center;
-  background-attachment: fixed;
   -webkit-background-size: auto;
   -moz-background-size: auto;
   -o-background-size: auto;
