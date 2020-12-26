@@ -5,7 +5,13 @@
 */
 
 body {
-  background: repeating-linear-gradient(45deg, #ffffff 0%, #ffffff 10%, #ffffff 0%, #efefff81 30%) 0 / 15px 15px;
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat-back.svg);
+  background-position: center;
+  background-repeat: repeat;
+  background-size: 7%;
+  background-color: #fff;
+  overflow-x: hidden;
+  transition: all 200ms linear;
 }
 
 .disable-hover {
