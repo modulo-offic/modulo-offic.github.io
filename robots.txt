@@ -1,4 +1,0 @@
-User-agent: 
-Crawl-delay: 5
-Host: https://modulo-offic.site/
-Sitemap: http://modulo-offic.site/sitemap.xml
